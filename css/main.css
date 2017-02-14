@@ -122,6 +122,21 @@ body {
     vertical-align: middle;
 }
 
+.container {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .logo {
     width: 100%;
     height: 200px;
@@ -205,6 +220,58 @@ a:hover, a:focus {
 
 .social ul li .fa-envelope {
     font-size: 3.4em;
+}
+
+.left-gear {
+  -webkit-animation: counter-rotation 5s infinite linear;
+	   -moz-animation: counter-rotation 5s infinite linear;
+	     -o-animation: counter-rotation 5s infinite linear;
+	        animation: counter-rotation 5s infinite linear;
+  -webkit-transform-origin: 120px 140px;
+      -ms-transform-origin: 120px 140px;
+          transform-origin: 120px 140px; }
+
+.right-gear {
+  -webkit-animation: rotation 5s infinite linear;
+     -moz-animation: rotation 5s infinite linear;
+	     -o-animation: rotation 5s infinite linear;
+        	animation: rotation 5s infinite linear;
+  -webkit-transform-origin: 210px 140px;
+      -ms-transform-origin: 210px 140px;
+          transform-origin: 210px 140px; }
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(359deg);}
+    to   {-webkit-transform: rotate(0deg);}
+}
+@-moz-keyframes rotation {
+    from {-moz-transform: rotate(359deg);}
+    to   {-moz-transform: rotate(0deg);}
+}
+@-o-keyframes rotation {
+    from {-o-transform: rotate(359deg);}
+    to   {-o-transform: rotate(0deg);}
+}
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to   {transform: rotate(359deg);}
+}
+
+@-webkit-keyframes counter-rotation {
+    from {-webkit-transform: rotate(359deg);}
+    to   {-webkit-transform: rotate(0deg);}
+}
+@-moz-keyframes counter-rotation {
+    from {-moz-transform: rotate(359deg);}
+    to   {-moz-transform: rotate(0deg);}
+}
+@-o-keyframes counter-rotation {
+    from {-o-transform: rotate(359deg);}
+    to   {-o-transform: rotate(0deg);}
+}
+@keyframes counter-rotation {
+    from {transform: rotate(359deg);}
+    to   {transform: rotate(0deg);}
 }
 
 
